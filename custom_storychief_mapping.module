@@ -1,0 +1,39 @@
+<?php
+
+/**
+ * Alter StoryChief plugin definitions.
+ *
+ * @param array $definitions
+ *   The array of StoryChief plugin definitions, keyed by plugin ID.
+ *
+ * @see \Drupal\search\Annotation\SearchPlugin
+ * @see \Drupal\search\SearchPluginManager
+ */
+function MYMODULE_storychief_field_handler_info_alter(array &$definitions)
+{
+  // Unset / alter specific definitions if needed.
+}
+
+/**
+ * Implements hook_storychief_node_type_alter()
+ *
+ * @param string $node_type
+ *   The node type to create.
+ * @param array $payload
+ *   The json decoded payload received from StoryChief.
+ */
+function MYMODULE_storychief_node_type_alter(string &$node_type, array $payload)
+{
+  // Change the node type to save to on the fly.
+}
+
+/**
+ * Implements hook_storychief_payload_alter()
+ *
+ * @param array $payload
+ *   The json decoded payload received from StoryChief.
+ */
+function MYMODULE_mapping_storychief_payload_alter(array &$payload)
+{
+  // Alter the incoming payload before processing
+}
