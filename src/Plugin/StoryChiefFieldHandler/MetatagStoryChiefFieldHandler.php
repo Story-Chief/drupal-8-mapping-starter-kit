@@ -2,10 +2,10 @@
 
 namespace Drupal\custom_storychief_mapping\Plugin\StoryChiefFieldHandler;
 
-use Drupal\storychief\Plugin\FieldHandlerType\MetaTagFieldHandler;
+use Drupal\storychief\Plugin\FieldHandlerType\MetatagFieldHandlerType;
 
 /**
- * Class ContentStoryChiefFieldHandler.
+ * Class MetatagStoryChiefFieldHandler.
  * Example of a Metatag field
  *
  * @StoryChiefFieldHandler(
@@ -14,6 +14,6 @@ use Drupal\storychief\Plugin\FieldHandlerType\MetaTagFieldHandler;
  *   drupal_field_name = "field_meta_tag",
  * )
  */
-class MetaTagStoryChiefFieldHandler extends MetaTagFieldHandler {
+class MetatagStoryChiefFieldHandler extends MetatagFieldHandlerType {
 
 }
